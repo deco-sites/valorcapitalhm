@@ -15,7 +15,5 @@ export interface HeaderType {
 }
 
 export default function Header(props: HeaderType) {
-  return (
-    <MenuButton logoImage={props?.logoImage} linkList={props?.linkList} />
-  );
+  return <MenuButton logoImage={props?.logoImage} linkList={props?.linkList} />;
 }

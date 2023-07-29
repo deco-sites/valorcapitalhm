@@ -1,8 +1,5 @@
 import { useEffect, useState } from "preact/compat";
 
-import { context } from "$live/live.ts";
-import Image from "deco-sites/std/components/Image.tsx";
-import type { Image as LiveImage } from "deco-sites/std/components/types.ts";
 import type { HeaderType } from "../sections/Header.tsx";
 
 export default function MenuButton(props: HeaderType) {
@@ -22,7 +19,7 @@ export default function MenuButton(props: HeaderType) {
       <nav
         className={`px-[1.5rem] py-[1.25rem] transition ${
           isOpen ? `bg-[#263961] h-[100vh]` : `bg-white`
-        } transition-all lg:px-[5rem] lg:py-[2rem] lg:flex lg:flex-row lg:justify-between`}
+        } transition-all xl:px-[5rem] xl:py-[2rem] xl:flex xl:flex-row xl:justify-between`}
       >
         <div className={`flex justify-between items-center`}>
           <picture>
@@ -30,13 +27,13 @@ export default function MenuButton(props: HeaderType) {
               src={logoImage}
               alt=""
               className={`max-w-[140px] ${
-                isOpen ? `brightness-[10]` : ` lg:max-w-[100%]`
+                isOpen ? `brightness-[10]` : ` xl:max-w-[100%]`
               }`}
             />
           </picture>
 
           <button
-            className="flex flex-col h-12 w-12 rounded justify-center items-center group lg:invisible lg:w-0 lg:h-0]"
+            className="flex flex-col h-12 w-12 rounded justify-center items-center group xl:invisible xl:w-0 xl:h-0]"
             onClick={() => setIsOpen(!isOpen)}
           >
             <div
@@ -61,21 +58,21 @@ export default function MenuButton(props: HeaderType) {
           </button>
         </div>
         <div
-          class={isOpen ? `` : `h-0 invisible lg:h-[fit-content] lg:visible`}
+          class={isOpen ? `` : `h-0 invisible xl:h-[fit-content] xl:visible`}
         >
           <ul
             className={`${
               isOpen ? `flex flex-col gap-[40px] my-[25px]` : `invisible`
-            } lg:flex lg:flex-row lg:visible lg:justify-center lg:items-center`}
+            } xl:flex xl:flex-row xl:visible xl:justify-center xl:items-center`}
           >
             {linkList?.map((item) => {
               return (
                 <li>
                   <a
-                    className={`text-3xl text-white font-bold lg:text-[#2d4168] lg:text-base lg:mx-[1rem]`}
-                    href={item.href}
+                    className={`text-3xl text-white font-bold xl:text-[#2d4168] xl:text-base xl:mx-[1rem]`}
+                    href={item?.href}
                   >
-                    {item.label}
+                    {item?.label}
                   </a>
                 </li>
               );
@@ -84,7 +81,7 @@ export default function MenuButton(props: HeaderType) {
               className={`bg-gradient-to-bl from-[#48d0ff] to-[#e4ff49] w-[fit-content] px-[6px] py-[24px] rounded-full`}
             >
               <a
-                className={`bg-[#263961] px-[36px] py-[20px]  text-lg text-white font-bold rounded-full lg:bg-white lg:text-[#263961] lg:hover:bg-[rgb(255,255,255,0)] transition-all duration-300`}
+                className={`bg-[#263961] px-[36px] py-[20px]  text-xl text-white font-bold rounded-full xl:bg-white xl:text-[#263961] xl:hover:bg-[rgb(255,255,255,0)] xl:transition-all xl:duration-300`}
                 href=""
               >
                 Get in Touch
