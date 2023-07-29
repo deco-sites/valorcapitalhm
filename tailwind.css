@@ -4,6 +4,12 @@
 
 @layer base {
 
+  @font-face {
+    font-family: FreightText;
+    font-weight: 400;
+    src: url(./static/freighttext-book.ttf) format("ttf");
+  }
+
   /* Allow changing font family via CMS */
   html {
     font-family: var(--font-family);
