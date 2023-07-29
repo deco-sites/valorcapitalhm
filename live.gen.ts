@@ -5,10 +5,12 @@
 import { DecoManifest } from "$live/types.ts";
 import * as $$$$0 from "./routes/styles.css.ts";
 import * as $$$$1 from "./routes/_app.tsx";
-import * as $$$$$$$$0 from "./sections/Hero.tsx";
-import * as $$$$$$$$1 from "./sections/ParagraphList.tsx";
-import * as $$$$$$$$2 from "./sections/SimpleTextList.tsx";
-import * as $$$$$$$$3 from "./sections/Theme.tsx";
+import * as $$$$$0 from "./islands/MenuButton.tsx";
+import * as $$$$$$$$0 from "./sections/Header.tsx";
+import * as $$$$$$$$1 from "./sections/Hero.tsx";
+import * as $$$$$$$$2 from "./sections/ParagraphList.tsx";
+import * as $$$$$$$$3 from "./sections/SimpleTextList.tsx";
+import * as $$$$$$$$4 from "./sections/Theme.tsx";
 import * as $live_workflows from "$live/routes/live/workflows/run.ts";
 import * as $live_middleware from "$live/routes/_middleware.ts";
 import * as $live_workbench from "$live/routes/live/workbench.ts";
@@ -152,6 +154,9 @@ const manifest = {
     "./routes/live/workflows/run.ts": $live_workflows,
     "./routes/styles.css.ts": $$$$0,
   },
+  "islands": {
+    "./islands/MenuButton.tsx": $$$$$0,
+  },
   "sections": {
     "$live/sections/Conditional_Beta.tsx": i2$$$$$0,
     "$live/sections/EmptySection.tsx": i2$$$$$1,
@@ -169,10 +174,11 @@ const manifest = {
     "deco-sites/std/sections/SEOPDP.tsx": i2$$$$$13,
     "deco-sites/std/sections/SEOPLP.tsx": i2$$$$$14,
     "deco-sites/std/sections/VTEXPortalDataLayerCompatibility.tsx": i2$$$$$15,
-    "deco-sites/valorcapitalhm/sections/Hero.tsx": $$$$$$$$0,
-    "deco-sites/valorcapitalhm/sections/ParagraphList.tsx": $$$$$$$$1,
-    "deco-sites/valorcapitalhm/sections/SimpleTextList.tsx": $$$$$$$$2,
-    "deco-sites/valorcapitalhm/sections/Theme.tsx": $$$$$$$$3,
+    "deco-sites/valorcapitalhm/sections/Header.tsx": $$$$$$$$0,
+    "deco-sites/valorcapitalhm/sections/Hero.tsx": $$$$$$$$1,
+    "deco-sites/valorcapitalhm/sections/ParagraphList.tsx": $$$$$$$$2,
+    "deco-sites/valorcapitalhm/sections/SimpleTextList.tsx": $$$$$$$$3,
+    "deco-sites/valorcapitalhm/sections/Theme.tsx": $$$$$$$$4,
   },
   "loaders": {
     "$live/loaders/state.ts": i2$$$0,
@@ -288,7 +294,6 @@ const manifest = {
     "deco-sites/std/accounts/vtex.ts": i2$$4,
     "deco-sites/std/accounts/yourViews.ts": i2$$5,
   },
-  "islands": {},
   "baseUrl": import.meta.url,
 };
 
