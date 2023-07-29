@@ -96,6 +96,7 @@
               "deco-sites/valorcapitalhm/sections/ParagraphList.tsx",
               "deco-sites/valorcapitalhm/sections/SimpleTextList.tsx",
               "deco-sites/valorcapitalhm/sections/Theme.tsx",
+              "deco-sites/valorcapitalhm/sections/UnderHeader.tsx",
               "$live/matchers/MatchAlways.ts",
               "$live/matchers/MatchCron.ts",
               "$live/matchers/MatchDate.ts",
@@ -8790,6 +8791,24 @@
       "required": [],
       "title": "deco-sites/valorcapitalhm/sections/Theme.tsx@Props"
     },
+    "ZGVjby1zaXRlcy92YWxvcmNhcGl0YWxobS9zZWN0aW9ucy9VbmRlckhlYWRlci50c3g=@props": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "string",
+          "title": "Title"
+        },
+        "text": {
+          "type": "string",
+          "title": "Text"
+        }
+      },
+      "required": [
+        "title",
+        "text"
+      ],
+      "title": "deco-sites/valorcapitalhm/sections/UnderHeader.tsx@props"
+    },
     "ZGVjby1jeC9saXZlL21hdGNoZXJzL01hdGNoQ3Jvbi50cw==@CronProps": {
       "type": "object",
       "properties": {
@@ -11398,6 +11417,27 @@
         }
       }
     },
+    "ZGVjby1zaXRlcy92YWxvcmNhcGl0YWxobS9zZWN0aW9ucy9VbmRlckhlYWRlci50c3g=": {
+      "title": "deco-sites/valorcapitalhm/sections/UnderHeader.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy92YWxvcmNhcGl0YWxobS9zZWN0aW9ucy9VbmRlckhlYWRlci50c3g=@props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/valorcapitalhm/sections/UnderHeader.tsx"
+          ],
+          "default": "deco-sites/valorcapitalhm/sections/UnderHeader.tsx"
+        }
+      }
+    },
     "JGxpdmUvbWF0Y2hlcnMvTWF0Y2hBbHdheXMudHM=": {
       "title": "Always",
       "type": "object",
@@ -12422,6 +12462,9 @@
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy92YWxvcmNhcGl0YWxobS9zZWN0aW9ucy9UaGVtZS50c3g="
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy92YWxvcmNhcGl0YWxobS9zZWN0aW9ucy9VbmRlckhlYWRlci50c3g="
         }
       ]
     },

@@ -11,6 +11,7 @@ import * as $$$$$$$$1 from "./sections/Hero.tsx";
 import * as $$$$$$$$2 from "./sections/ParagraphList.tsx";
 import * as $$$$$$$$3 from "./sections/SimpleTextList.tsx";
 import * as $$$$$$$$4 from "./sections/Theme.tsx";
+import * as $$$$$$$$5 from "./sections/UnderHeader.tsx";
 import * as $live_workflows from "$live/routes/live/workflows/run.ts";
 import * as $live_middleware from "$live/routes/_middleware.ts";
 import * as $live_workbench from "$live/routes/live/workbench.ts";
@@ -179,6 +180,7 @@ const manifest = {
     "deco-sites/valorcapitalhm/sections/ParagraphList.tsx": $$$$$$$$2,
     "deco-sites/valorcapitalhm/sections/SimpleTextList.tsx": $$$$$$$$3,
     "deco-sites/valorcapitalhm/sections/Theme.tsx": $$$$$$$$4,
+    "deco-sites/valorcapitalhm/sections/UnderHeader.tsx": $$$$$$$$5,
   },
   "loaders": {
     "$live/loaders/state.ts": i2$$$0,
