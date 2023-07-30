@@ -97,6 +97,7 @@
               "deco-sites/valorcapitalhm/sections/SimpleTextList.tsx",
               "deco-sites/valorcapitalhm/sections/Theme.tsx",
               "deco-sites/valorcapitalhm/sections/UnderHeader.tsx",
+              "deco-sites/valorcapitalhm/sections/ValorComunity.tsx",
               "$live/matchers/MatchAlways.ts",
               "$live/matchers/MatchCron.ts",
               "$live/matchers/MatchDate.ts",
@@ -8809,6 +8810,41 @@
       ],
       "title": "deco-sites/valorcapitalhm/sections/UnderHeader.tsx@props"
     },
+    "ZGVjby1zaXRlcy92YWxvcmNhcGl0YWxobS9zZWN0aW9ucy9WYWxvckNvbXVuaXR5LnRzeA==@Props": {
+      "type": "object",
+      "properties": {
+        "cards": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "image": {
+                "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+                "title": "Image"
+              },
+              "title": {
+                "type": "string",
+                "title": "Title"
+              },
+              "text": {
+                "type": "string",
+                "title": "Text"
+              }
+            },
+            "required": [
+              "image",
+              "title",
+              "text"
+            ]
+          },
+          "title": "Cards"
+        }
+      },
+      "required": [
+        "cards"
+      ],
+      "title": "deco-sites/valorcapitalhm/sections/ValorComunity.tsx@Props"
+    },
     "ZGVjby1jeC9saXZlL21hdGNoZXJzL01hdGNoQ3Jvbi50cw==@CronProps": {
       "type": "object",
       "properties": {
@@ -11438,6 +11474,27 @@
         }
       }
     },
+    "ZGVjby1zaXRlcy92YWxvcmNhcGl0YWxobS9zZWN0aW9ucy9WYWxvckNvbXVuaXR5LnRzeA==": {
+      "title": "deco-sites/valorcapitalhm/sections/ValorComunity.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy92YWxvcmNhcGl0YWxobS9zZWN0aW9ucy9WYWxvckNvbXVuaXR5LnRzeA==@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/valorcapitalhm/sections/ValorComunity.tsx"
+          ],
+          "default": "deco-sites/valorcapitalhm/sections/ValorComunity.tsx"
+        }
+      }
+    },
     "JGxpdmUvbWF0Y2hlcnMvTWF0Y2hBbHdheXMudHM=": {
       "title": "Always",
       "type": "object",
@@ -12465,6 +12522,9 @@
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy92YWxvcmNhcGl0YWxobS9zZWN0aW9ucy9VbmRlckhlYWRlci50c3g="
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy92YWxvcmNhcGl0YWxobS9zZWN0aW9ucy9WYWxvckNvbXVuaXR5LnRzeA=="
         }
       ]
     },
