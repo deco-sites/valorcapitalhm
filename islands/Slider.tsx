@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from "preact/hooks";
+import { useEffect, useRef, useState } from "preact/hooks";
 
 interface Card {
   image: string;
@@ -81,10 +81,10 @@ const Slider: React.FC<SliderProps> = ({ cards }) => {
     >
       <div className="xl:w-[100%] xl:flex xl:flex-row xl:items-center	">
         <button
-              onClick={() => handleSliderToLeft()}
-              className="bg-gray-200 hover:bg-gray-300 text-gray-600 font-bold py-2 px-4 rounded-l hidden xl:block"
-            >
-              {"<"}
+          onClick={() => handleSliderToLeft()}
+          className="bg-gray-200 hover:bg-gray-300 text-gray-600 font-bold py-2 px-4 rounded-l hidden xl:block"
+        >
+          {"<"}
         </button>
         {cards.length > 0 && (
           <div className="w-[100%] h-[400px] relative overflow-hidden">
@@ -103,10 +103,10 @@ const Slider: React.FC<SliderProps> = ({ cards }) => {
           </div>
         )}
         <button
-              onClick={() => handleSliderToRight()}
-              className="bg-gray-200 hover:bg-gray-300 text-gray-600 font-bold py-2 px-4 rounded-r hidden xl:block"
-            >
-              {">"}
+          onClick={() => handleSliderToRight()}
+          className="bg-gray-200 hover:bg-gray-300 text-gray-600 font-bold py-2 px-4 rounded-r hidden xl:block"
+        >
+          {">"}
         </button>
       </div>
       {dots()}
