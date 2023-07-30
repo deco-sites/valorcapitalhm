@@ -93,6 +93,8 @@
               "deco-sites/std/sections/VTEXPortalDataLayerCompatibility.tsx",
               "deco-sites/valorcapitalhm/sections/Header.tsx",
               "deco-sites/valorcapitalhm/sections/Hero.tsx",
+              "deco-sites/valorcapitalhm/sections/InfoCard.tsx",
+              "deco-sites/valorcapitalhm/sections/OurTeam.tsx",
               "deco-sites/valorcapitalhm/sections/ParagraphList.tsx",
               "deco-sites/valorcapitalhm/sections/SimpleTextList.tsx",
               "deco-sites/valorcapitalhm/sections/Theme.tsx",
@@ -8107,6 +8109,116 @@
       "required": [],
       "title": "deco-sites/valorcapitalhm/sections/Hero.tsx@Props"
     },
+    "ZGVjby1zaXRlcy92YWxvcmNhcGl0YWxobS9zZWN0aW9ucy9JbmZvQ2FyZC50c3g=@InfoCard": {
+      "type": "object",
+      "properties": {
+        "textPosition": {
+          "anyOf": [
+            {
+              "type": "string",
+              "const": "left",
+              "default": "left"
+            },
+            {
+              "type": "string",
+              "const": "right",
+              "default": "right"
+            }
+          ],
+          "type": "string",
+          "description": "Posição do texto referente a image.",
+          "title": "Text Position"
+        },
+        "image": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+          "description": "Imagem principal do card.",
+          "title": "Image"
+        },
+        "secondaryImage": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+          "description": "Imagem secundária que se encontra na esquerda inferior",
+          "title": "Secondary Image"
+        },
+        "subTitle": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "Texto acima do título.",
+          "title": "Sub Title"
+        },
+        "title": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "Título do card.",
+          "title": "Title"
+        },
+        "description": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "Texto logo abaixo do título.",
+          "title": "Description"
+        },
+        "readMoreLink": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "Link para o redirecionamento do Read More",
+          "title": "Read More Link"
+        }
+      },
+      "required": [
+        "textPosition"
+      ],
+      "title": "deco-sites/valorcapitalhm/sections/InfoCard.tsx@InfoCard"
+    },
+    "ZGVjby1zaXRlcy92YWxvcmNhcGl0YWxobS9zZWN0aW9ucy9PdXJUZWFtLnRzeA==@OurTeam": {
+      "type": "object",
+      "properties": {
+        "subTitle": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Sub Title"
+        },
+        "title": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Title"
+        },
+        "description": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Description"
+        },
+        "buttonText": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Button Text"
+        },
+        "buttonHref": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Button Href"
+        }
+      },
+      "required": [],
+      "title": "deco-sites/valorcapitalhm/sections/OurTeam.tsx@OurTeam"
+    },
     "ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML": {
       "type": "string",
       "format": "html",
@@ -11390,6 +11502,48 @@
         }
       }
     },
+    "ZGVjby1zaXRlcy92YWxvcmNhcGl0YWxobS9zZWN0aW9ucy9JbmZvQ2FyZC50c3g=": {
+      "title": "deco-sites/valorcapitalhm/sections/InfoCard.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy92YWxvcmNhcGl0YWxobS9zZWN0aW9ucy9JbmZvQ2FyZC50c3g=@InfoCard"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/valorcapitalhm/sections/InfoCard.tsx"
+          ],
+          "default": "deco-sites/valorcapitalhm/sections/InfoCard.tsx"
+        }
+      }
+    },
+    "ZGVjby1zaXRlcy92YWxvcmNhcGl0YWxobS9zZWN0aW9ucy9PdXJUZWFtLnRzeA==": {
+      "title": "deco-sites/valorcapitalhm/sections/OurTeam.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy92YWxvcmNhcGl0YWxobS9zZWN0aW9ucy9PdXJUZWFtLnRzeA==@OurTeam"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/valorcapitalhm/sections/OurTeam.tsx"
+          ],
+          "default": "deco-sites/valorcapitalhm/sections/OurTeam.tsx"
+        }
+      }
+    },
     "ZGVjby1zaXRlcy92YWxvcmNhcGl0YWxobS9zZWN0aW9ucy9QYXJhZ3JhcGhMaXN0LnRzeA==": {
       "title": "deco-sites/valorcapitalhm/sections/ParagraphList.tsx",
       "type": "object",
@@ -12510,6 +12664,12 @@
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy92YWxvcmNhcGl0YWxobS9zZWN0aW9ucy9IZXJvLnRzeA=="
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy92YWxvcmNhcGl0YWxobS9zZWN0aW9ucy9JbmZvQ2FyZC50c3g="
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy92YWxvcmNhcGl0YWxobS9zZWN0aW9ucy9PdXJUZWFtLnRzeA=="
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy92YWxvcmNhcGl0YWxobS9zZWN0aW9ucy9QYXJhZ3JhcGhMaXN0LnRzeA=="
