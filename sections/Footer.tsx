@@ -82,11 +82,13 @@ export default function Footer(
           <p className="text-[16px] text-[#000] font-bold my-[8px] lg:my-0">
             Follow Us
           </p>
-          {followUs.map((item, index) => (
-            <div key={index}>
-              <Image src={item.image} width={28} />
-            </div>
-          ))}
+          <div className={`flex flex-row gap-5`}>
+            {followUs.map((item, index) => (
+              <div key={index}>
+                <Image src={item.image} width={28} />
+              </div>
+            ))}
+          </div>
         </div>
       </div>
       <div className="px-[20px] py-[23px] lg:px-[80px] lg:border-t lg:border-t-[#e6e6e6]">
