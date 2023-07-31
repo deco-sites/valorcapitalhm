@@ -12,10 +12,11 @@ import * as $$$$$$$$1 from "./sections/Hero.tsx";
 import * as $$$$$$$$2 from "./sections/InfoCard.tsx";
 import * as $$$$$$$$3 from "./sections/OurTeam.tsx";
 import * as $$$$$$$$4 from "./sections/ParagraphList.tsx";
-import * as $$$$$$$$5 from "./sections/SimpleTextList.tsx";
-import * as $$$$$$$$6 from "./sections/Theme.tsx";
-import * as $$$$$$$$7 from "./sections/UnderHeader.tsx";
-import * as $$$$$$$$8 from "./sections/ValorComunity.tsx";
+import * as $$$$$$$$5 from "./sections/Portfolio.tsx";
+import * as $$$$$$$$6 from "./sections/SimpleTextList.tsx";
+import * as $$$$$$$$7 from "./sections/Theme.tsx";
+import * as $$$$$$$$8 from "./sections/UnderHeader.tsx";
+import * as $$$$$$$$9 from "./sections/ValorComunity.tsx";
 import * as $live_workflows from "$live/routes/live/workflows/run.ts";
 import * as $live_middleware from "$live/routes/_middleware.ts";
 import * as $live_workbench from "$live/routes/live/workbench.ts";
@@ -185,10 +186,11 @@ const manifest = {
     "deco-sites/valorcapitalhm/sections/InfoCard.tsx": $$$$$$$$2,
     "deco-sites/valorcapitalhm/sections/OurTeam.tsx": $$$$$$$$3,
     "deco-sites/valorcapitalhm/sections/ParagraphList.tsx": $$$$$$$$4,
-    "deco-sites/valorcapitalhm/sections/SimpleTextList.tsx": $$$$$$$$5,
-    "deco-sites/valorcapitalhm/sections/Theme.tsx": $$$$$$$$6,
-    "deco-sites/valorcapitalhm/sections/UnderHeader.tsx": $$$$$$$$7,
-    "deco-sites/valorcapitalhm/sections/ValorComunity.tsx": $$$$$$$$8,
+    "deco-sites/valorcapitalhm/sections/Portfolio.tsx": $$$$$$$$5,
+    "deco-sites/valorcapitalhm/sections/SimpleTextList.tsx": $$$$$$$$6,
+    "deco-sites/valorcapitalhm/sections/Theme.tsx": $$$$$$$$7,
+    "deco-sites/valorcapitalhm/sections/UnderHeader.tsx": $$$$$$$$8,
+    "deco-sites/valorcapitalhm/sections/ValorComunity.tsx": $$$$$$$$9,
   },
   "loaders": {
     "$live/loaders/state.ts": i2$$$0,

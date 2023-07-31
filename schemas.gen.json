@@ -96,6 +96,7 @@
               "deco-sites/valorcapitalhm/sections/InfoCard.tsx",
               "deco-sites/valorcapitalhm/sections/OurTeam.tsx",
               "deco-sites/valorcapitalhm/sections/ParagraphList.tsx",
+              "deco-sites/valorcapitalhm/sections/Portfolio.tsx",
               "deco-sites/valorcapitalhm/sections/SimpleTextList.tsx",
               "deco-sites/valorcapitalhm/sections/Theme.tsx",
               "deco-sites/valorcapitalhm/sections/UnderHeader.tsx",
@@ -8263,6 +8264,46 @@
       "required": [],
       "title": "deco-sites/valorcapitalhm/sections/ParagraphList.tsx@Props"
     },
+    "ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image[]": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image"
+      },
+      "title": "Image[]"
+    },
+    "ZGVjby1zaXRlcy92YWxvcmNhcGl0YWxobS9zZWN0aW9ucy9Qb3J0Zm9saW8udHN4@Props": {
+      "type": "object",
+      "properties": {
+        "buttonText": {
+          "type": "string",
+          "title": "Button Text"
+        },
+        "buttonHref": {
+          "type": "string",
+          "title": "Button Href"
+        },
+        "smallTitle": {
+          "type": "string",
+          "title": "Small Title"
+        },
+        "title": {
+          "type": "string",
+          "title": "Title"
+        },
+        "imgs": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image[]",
+          "title": "Imgs"
+        }
+      },
+      "required": [
+        "buttonText",
+        "buttonHref",
+        "smallTitle",
+        "title",
+        "imgs"
+      ],
+      "title": "deco-sites/valorcapitalhm/sections/Portfolio.tsx@Props"
+    },
     "ZGVjby1zaXRlcy92YWxvcmNhcGl0YWxobS9zZWN0aW9ucy9TaW1wbGVUZXh0TGlzdC50c3g=@Item": {
       "type": "object",
       "properties": {
@@ -8925,27 +8966,74 @@
     "ZGVjby1zaXRlcy92YWxvcmNhcGl0YWxobS9zZWN0aW9ucy9WYWxvckNvbXVuaXR5LnRzeA==@Props": {
       "type": "object",
       "properties": {
+        "sectionTitle": {
+          "type": "string",
+          "title": "Section Title"
+        },
+        "sectionExplorerLink": {
+          "type": "string",
+          "title": "Section Explorer Link"
+        },
         "cards": {
           "type": "array",
           "items": {
             "type": "object",
             "properties": {
-              "image": {
-                "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
-                "title": "Image"
+              "label": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "title": "Label"
               },
               "title": {
                 "type": "string",
                 "title": "Title"
               },
+              "image": {
+                "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+                "title": "Image"
+              },
+              "titleLink": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "title": "Title Link"
+              },
               "text": {
                 "type": "string",
                 "title": "Text"
+              },
+              "localName": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "title": "Local Name"
+              },
+              "logo": {
+                "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+                "title": "Logo"
+              },
+              "name": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "title": "Name"
+              },
+              "date": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "title": "Date"
               }
             },
             "required": [
-              "image",
               "title",
+              "image",
               "text"
             ]
           },
@@ -8953,6 +9041,8 @@
         }
       },
       "required": [
+        "sectionTitle",
+        "sectionExplorerLink",
         "cards"
       ],
       "title": "deco-sites/valorcapitalhm/sections/ValorComunity.tsx@Props"
@@ -11565,6 +11655,27 @@
         }
       }
     },
+    "ZGVjby1zaXRlcy92YWxvcmNhcGl0YWxobS9zZWN0aW9ucy9Qb3J0Zm9saW8udHN4": {
+      "title": "deco-sites/valorcapitalhm/sections/Portfolio.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy92YWxvcmNhcGl0YWxobS9zZWN0aW9ucy9Qb3J0Zm9saW8udHN4@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/valorcapitalhm/sections/Portfolio.tsx"
+          ],
+          "default": "deco-sites/valorcapitalhm/sections/Portfolio.tsx"
+        }
+      }
+    },
     "ZGVjby1zaXRlcy92YWxvcmNhcGl0YWxobS9zZWN0aW9ucy9TaW1wbGVUZXh0TGlzdC50c3g=": {
       "title": "deco-sites/valorcapitalhm/sections/SimpleTextList.tsx",
       "type": "object",
@@ -12673,6 +12784,9 @@
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy92YWxvcmNhcGl0YWxobS9zZWN0aW9ucy9QYXJhZ3JhcGhMaXN0LnRzeA=="
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy92YWxvcmNhcGl0YWxobS9zZWN0aW9ucy9Qb3J0Zm9saW8udHN4"
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy92YWxvcmNhcGl0YWxobS9zZWN0aW9ucy9TaW1wbGVUZXh0TGlzdC50c3g="

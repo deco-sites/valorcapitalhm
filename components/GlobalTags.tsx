@@ -43,7 +43,6 @@ function GlobalTags() {
           mark {
             background: linear-gradient(225deg,#48d0ff,#e4ff49) no-repeat;
             padding: 0 0.6875rem;
-            margin-left: -0.6875rem;
           }
 
           .fade-in {
