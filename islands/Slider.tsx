@@ -6,11 +6,11 @@ interface Card {
   image: string;
   title: string;
   titleLink?: string;
-  text: string
+  text: string;
   localName?: string;
   logo?: string;
   name?: string;
-  date?: string;  
+  date?: string;
 }
 
 interface SliderProps {
@@ -106,17 +106,22 @@ const Slider: React.FC<SliderProps> = ({ cards }) => {
                   index === activeSlideIndex ? "fade-in" : "fade-out"
                 }`}
               >
-                <Image 
-                className="max-w-full h-auto rounded-[5px] xl:w-[685px] lg:w-[550px] w-[400px]"
-                src={item.image} 
-                alt={item.title}
-                width={685}
-                height={472}
+                <Image
+                  className="max-w-full h-auto rounded-[5px] xl:w-[685px] lg:w-[550px] w-[400px]"
+                  src={item.image}
+                  alt={item.title}
+                  width={685}
+                  height={472}
                 />
                 <div className="pt-[20px] xl:pl-[50px] xl:pt-0">
                   <p>{item?.localName}</p>
                   <h4 className="mb-[18px]">
-                    <a href={item?.titleLink} className="mb-[20px] font-bold text-[18px] xl:text-[22px]">{item.title}</a>
+                    <a
+                      href={item?.titleLink}
+                      className="mb-[20px] font-bold text-[18px] xl:text-[22px]"
+                    >
+                      {item.title}
+                    </a>
                   </h4>
                   <p className="mb-[20px]">{item.text}</p>
                   <div className="flex flex-row items-center gap-[10px]">
