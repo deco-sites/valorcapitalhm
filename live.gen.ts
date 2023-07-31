@@ -7,16 +7,17 @@ import * as $$$$0 from "./routes/styles.css.ts";
 import * as $$$$1 from "./routes/_app.tsx";
 import * as $$$$$0 from "./islands/MenuButton.tsx";
 import * as $$$$$1 from "./islands/Slider.tsx";
-import * as $$$$$$$$0 from "./sections/Header.tsx";
-import * as $$$$$$$$1 from "./sections/Hero.tsx";
-import * as $$$$$$$$2 from "./sections/InfoCard.tsx";
-import * as $$$$$$$$3 from "./sections/OurTeam.tsx";
-import * as $$$$$$$$4 from "./sections/ParagraphList.tsx";
-import * as $$$$$$$$5 from "./sections/Portfolio.tsx";
-import * as $$$$$$$$6 from "./sections/SimpleTextList.tsx";
-import * as $$$$$$$$7 from "./sections/Theme.tsx";
-import * as $$$$$$$$8 from "./sections/UnderHeader.tsx";
-import * as $$$$$$$$9 from "./sections/ValorComunity.tsx";
+import * as $$$$$$$$0 from "./sections/Footer.tsx";
+import * as $$$$$$$$1 from "./sections/Header.tsx";
+import * as $$$$$$$$2 from "./sections/Hero.tsx";
+import * as $$$$$$$$3 from "./sections/InfoCard.tsx";
+import * as $$$$$$$$4 from "./sections/OurTeam.tsx";
+import * as $$$$$$$$5 from "./sections/ParagraphList.tsx";
+import * as $$$$$$$$6 from "./sections/Portfolio.tsx";
+import * as $$$$$$$$7 from "./sections/SimpleTextList.tsx";
+import * as $$$$$$$$8 from "./sections/Theme.tsx";
+import * as $$$$$$$$9 from "./sections/UnderHeader.tsx";
+import * as $$$$$$$$10 from "./sections/ValorComunity.tsx";
 import * as $live_workflows from "$live/routes/live/workflows/run.ts";
 import * as $live_middleware from "$live/routes/_middleware.ts";
 import * as $live_workbench from "$live/routes/live/workbench.ts";
@@ -181,16 +182,17 @@ const manifest = {
     "deco-sites/std/sections/SEOPDP.tsx": i2$$$$$13,
     "deco-sites/std/sections/SEOPLP.tsx": i2$$$$$14,
     "deco-sites/std/sections/VTEXPortalDataLayerCompatibility.tsx": i2$$$$$15,
-    "deco-sites/valorcapitalhm/sections/Header.tsx": $$$$$$$$0,
-    "deco-sites/valorcapitalhm/sections/Hero.tsx": $$$$$$$$1,
-    "deco-sites/valorcapitalhm/sections/InfoCard.tsx": $$$$$$$$2,
-    "deco-sites/valorcapitalhm/sections/OurTeam.tsx": $$$$$$$$3,
-    "deco-sites/valorcapitalhm/sections/ParagraphList.tsx": $$$$$$$$4,
-    "deco-sites/valorcapitalhm/sections/Portfolio.tsx": $$$$$$$$5,
-    "deco-sites/valorcapitalhm/sections/SimpleTextList.tsx": $$$$$$$$6,
-    "deco-sites/valorcapitalhm/sections/Theme.tsx": $$$$$$$$7,
-    "deco-sites/valorcapitalhm/sections/UnderHeader.tsx": $$$$$$$$8,
-    "deco-sites/valorcapitalhm/sections/ValorComunity.tsx": $$$$$$$$9,
+    "deco-sites/valorcapitalhm/sections/Footer.tsx": $$$$$$$$0,
+    "deco-sites/valorcapitalhm/sections/Header.tsx": $$$$$$$$1,
+    "deco-sites/valorcapitalhm/sections/Hero.tsx": $$$$$$$$2,
+    "deco-sites/valorcapitalhm/sections/InfoCard.tsx": $$$$$$$$3,
+    "deco-sites/valorcapitalhm/sections/OurTeam.tsx": $$$$$$$$4,
+    "deco-sites/valorcapitalhm/sections/ParagraphList.tsx": $$$$$$$$5,
+    "deco-sites/valorcapitalhm/sections/Portfolio.tsx": $$$$$$$$6,
+    "deco-sites/valorcapitalhm/sections/SimpleTextList.tsx": $$$$$$$$7,
+    "deco-sites/valorcapitalhm/sections/Theme.tsx": $$$$$$$$8,
+    "deco-sites/valorcapitalhm/sections/UnderHeader.tsx": $$$$$$$$9,
+    "deco-sites/valorcapitalhm/sections/ValorComunity.tsx": $$$$$$$$10,
   },
   "loaders": {
     "$live/loaders/state.ts": i2$$$0,

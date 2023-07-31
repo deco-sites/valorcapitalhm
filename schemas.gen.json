@@ -91,6 +91,7 @@
               "deco-sites/std/sections/SEOPDP.tsx",
               "deco-sites/std/sections/SEOPLP.tsx",
               "deco-sites/std/sections/VTEXPortalDataLayerCompatibility.tsx",
+              "deco-sites/valorcapitalhm/sections/Footer.tsx",
               "deco-sites/valorcapitalhm/sections/Header.tsx",
               "deco-sites/valorcapitalhm/sections/Hero.tsx",
               "deco-sites/valorcapitalhm/sections/InfoCard.tsx",
@@ -8059,6 +8060,115 @@
       ],
       "title": "deco-sites/std/sections/VTEXPortalDataLayerCompatibility.tsx@LoaderProps"
     },
+    "ZGVjby1zaXRlcy92YWxvcmNhcGl0YWxobS9zZWN0aW9ucy9Gb290ZXIudHN4@Footer": {
+      "type": "object",
+      "properties": {
+        "logo": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+          "title": "Logo"
+        },
+        "followUs": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "label": {
+                "type": "string",
+                "title": "Label"
+              },
+              "image": {
+                "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+                "title": "Image"
+              },
+              "link": {
+                "type": "string",
+                "title": "Link"
+              }
+            },
+            "required": [
+              "label",
+              "image",
+              "link"
+            ]
+          },
+          "title": "Follow Us"
+        },
+        "contatacUs": {
+          "type": "string",
+          "title": "Contatac Us"
+        },
+        "contatacUsTitle": {
+          "type": "string",
+          "title": "Contatac Us Title"
+        },
+        "contatacUsLink": {
+          "type": "string",
+          "title": "Contatac Us Link"
+        },
+        "contactUsLinkText": {
+          "type": "string",
+          "title": "Contact Us Link Text"
+        },
+        "outLinks1": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "title": {
+                "type": "string",
+                "title": "Title"
+              },
+              "link": {
+                "type": "string",
+                "title": "Link"
+              }
+            },
+            "required": [
+              "title",
+              "link"
+            ]
+          },
+          "title": "Out Links1"
+        },
+        "outLinks2": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "title": {
+                "type": "string",
+                "title": "Title"
+              },
+              "link": {
+                "type": "string",
+                "title": "Link"
+              }
+            },
+            "required": [
+              "title",
+              "link"
+            ]
+          },
+          "title": "Out Links2"
+        },
+        "rights": {
+          "type": "string",
+          "title": "Rights"
+        }
+      },
+      "required": [
+        "logo",
+        "followUs",
+        "contatacUs",
+        "contatacUsTitle",
+        "contatacUsLink",
+        "contactUsLinkText",
+        "outLinks1",
+        "outLinks2",
+        "rights"
+      ],
+      "title": "deco-sites/valorcapitalhm/sections/Footer.tsx@Footer"
+    },
     "ZGVjby1zaXRlcy92YWxvcmNhcGl0YWxobS9zZWN0aW9ucy9IZXJvLnRzeA==@Link": {
       "type": "object",
       "properties": {
@@ -11550,6 +11660,27 @@
         }
       }
     },
+    "ZGVjby1zaXRlcy92YWxvcmNhcGl0YWxobS9zZWN0aW9ucy9Gb290ZXIudHN4": {
+      "title": "deco-sites/valorcapitalhm/sections/Footer.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy92YWxvcmNhcGl0YWxobS9zZWN0aW9ucy9Gb290ZXIudHN4@Footer"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/valorcapitalhm/sections/Footer.tsx"
+          ],
+          "default": "deco-sites/valorcapitalhm/sections/Footer.tsx"
+        }
+      }
+    },
     "ZGVjby1zaXRlcy92YWxvcmNhcGl0YWxobS9zZWN0aW9ucy9IZWFkZXIudHN4": {
       "title": "deco-sites/valorcapitalhm/sections/Header.tsx",
       "type": "object",
@@ -12769,6 +12900,9 @@
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvc2VjdGlvbnMvVlRFWFBvcnRhbERhdGFMYXllckNvbXBhdGliaWxpdHkudHN4"
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy92YWxvcmNhcGl0YWxobS9zZWN0aW9ucy9Gb290ZXIudHN4"
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy92YWxvcmNhcGl0YWxobS9zZWN0aW9ucy9IZWFkZXIudHN4"
