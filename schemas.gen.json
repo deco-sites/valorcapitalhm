@@ -95,6 +95,7 @@
               "deco-sites/valorcapitalhm/sections/Header.tsx",
               "deco-sites/valorcapitalhm/sections/Hero.tsx",
               "deco-sites/valorcapitalhm/sections/InfoCard.tsx",
+              "deco-sites/valorcapitalhm/sections/InfoCardController.tsx",
               "deco-sites/valorcapitalhm/sections/OurApproach.tsx",
               "deco-sites/valorcapitalhm/sections/OurTeam.tsx",
               "deco-sites/valorcapitalhm/sections/ParagraphList.tsx",
@@ -8221,7 +8222,7 @@
       "required": [],
       "title": "deco-sites/valorcapitalhm/sections/Hero.tsx@Props"
     },
-    "ZGVjby1zaXRlcy92YWxvcmNhcGl0YWxobS9zZWN0aW9ucy9JbmZvQ2FyZC50c3g=@InfoCard": {
+    "ZGVjby1zaXRlcy92YWxvcmNhcGl0YWxobS9zZWN0aW9ucy9JbmZvQ2FyZC50c3g=@InfoCardInterface": {
       "type": "object",
       "properties": {
         "textPosition": {
@@ -8287,7 +8288,39 @@
       "required": [
         "textPosition"
       ],
-      "title": "deco-sites/valorcapitalhm/sections/InfoCard.tsx@InfoCard"
+      "title": "deco-sites/valorcapitalhm/sections/InfoCard.tsx@InfoCardInterface"
+    },
+    "ZGVjby1zaXRlcy92YWxvcmNhcGl0YWxobS9zZWN0aW9ucy9JbmZvQ2FyZC50c3g=@InfoCardInterface[]": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/ZGVjby1zaXRlcy92YWxvcmNhcGl0YWxobS9zZWN0aW9ucy9JbmZvQ2FyZC50c3g=@InfoCardInterface"
+      },
+      "title": "InfoCardInterface[]"
+    },
+    "ZGVjby1zaXRlcy92YWxvcmNhcGl0YWxobS9zZWN0aW9ucy9JbmZvQ2FyZENvbnRyb2xsZXIudHN4@InfoCardController": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Title"
+        },
+        "subTitle": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Sub Title"
+        },
+        "infoCards": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy92YWxvcmNhcGl0YWxobS9zZWN0aW9ucy9JbmZvQ2FyZC50c3g=@InfoCardInterface[]",
+          "title": "Info Cards"
+        }
+      },
+      "required": [],
+      "title": "deco-sites/valorcapitalhm/sections/InfoCardController.tsx@InfoCardController"
     },
     "ZGVjby1zaXRlcy92YWxvcmNhcGl0YWxobS9zZWN0aW9ucy9PdXJBcHByb2FjaC50c3g=@OurApproach": {
       "type": "object",
@@ -11757,7 +11790,7 @@
       "type": "object",
       "allOf": [
         {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy92YWxvcmNhcGl0YWxobS9zZWN0aW9ucy9JbmZvQ2FyZC50c3g=@InfoCard"
+          "$ref": "#/definitions/ZGVjby1zaXRlcy92YWxvcmNhcGl0YWxobS9zZWN0aW9ucy9JbmZvQ2FyZC50c3g=@InfoCardInterface"
         }
       ],
       "required": [
@@ -11770,6 +11803,27 @@
             "deco-sites/valorcapitalhm/sections/InfoCard.tsx"
           ],
           "default": "deco-sites/valorcapitalhm/sections/InfoCard.tsx"
+        }
+      }
+    },
+    "ZGVjby1zaXRlcy92YWxvcmNhcGl0YWxobS9zZWN0aW9ucy9JbmZvQ2FyZENvbnRyb2xsZXIudHN4": {
+      "title": "deco-sites/valorcapitalhm/sections/InfoCardController.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy92YWxvcmNhcGl0YWxobS9zZWN0aW9ucy9JbmZvQ2FyZENvbnRyb2xsZXIudHN4@InfoCardController"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/valorcapitalhm/sections/InfoCardController.tsx"
+          ],
+          "default": "deco-sites/valorcapitalhm/sections/InfoCardController.tsx"
         }
       }
     },
@@ -12962,6 +13016,9 @@
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy92YWxvcmNhcGl0YWxobS9zZWN0aW9ucy9JbmZvQ2FyZC50c3g="
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy92YWxvcmNhcGl0YWxobS9zZWN0aW9ucy9JbmZvQ2FyZENvbnRyb2xsZXIudHN4"
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy92YWxvcmNhcGl0YWxobS9zZWN0aW9ucy9PdXJBcHByb2FjaC50c3g="
