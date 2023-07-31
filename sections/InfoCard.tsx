@@ -1,6 +1,6 @@
 import type { Image as LiveImage } from "deco-sites/std/components/types.ts";
 
-export interface InfoCard {
+export interface InfoCardInterface {
   /** @description Posição do texto referente a image. */
   textPosition: "left" | "right";
   /** @description Imagem principal do card. */
@@ -17,7 +17,7 @@ export interface InfoCard {
   readMoreLink?: string;
 }
 
-export default function InfoCard(props: InfoCard) {
+export default function InfoCard(props: InfoCardInterface) {
   const {
     textPosition,
     image,
