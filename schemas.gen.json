@@ -95,6 +95,7 @@
               "deco-sites/valorcapitalhm/sections/Header.tsx",
               "deco-sites/valorcapitalhm/sections/Hero.tsx",
               "deco-sites/valorcapitalhm/sections/InfoCard.tsx",
+              "deco-sites/valorcapitalhm/sections/OurApproach.tsx",
               "deco-sites/valorcapitalhm/sections/OurTeam.tsx",
               "deco-sites/valorcapitalhm/sections/ParagraphList.tsx",
               "deco-sites/valorcapitalhm/sections/Portfolio.tsx",
@@ -8288,6 +8289,34 @@
       ],
       "title": "deco-sites/valorcapitalhm/sections/InfoCard.tsx@InfoCard"
     },
+    "ZGVjby1zaXRlcy92YWxvcmNhcGl0YWxobS9zZWN0aW9ucy9PdXJBcHByb2FjaC50c3g=@OurApproach": {
+      "type": "object",
+      "properties": {
+        "subTitle": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Sub Title"
+        },
+        "title": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Title"
+        },
+        "readModeHref": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Read Mode Href"
+        }
+      },
+      "required": [],
+      "title": "deco-sites/valorcapitalhm/sections/OurApproach.tsx@OurApproach"
+    },
     "ZGVjby1zaXRlcy92YWxvcmNhcGl0YWxobS9zZWN0aW9ucy9PdXJUZWFtLnRzeA==@OurTeam": {
       "type": "object",
       "properties": {
@@ -11744,6 +11773,27 @@
         }
       }
     },
+    "ZGVjby1zaXRlcy92YWxvcmNhcGl0YWxobS9zZWN0aW9ucy9PdXJBcHByb2FjaC50c3g=": {
+      "title": "deco-sites/valorcapitalhm/sections/OurApproach.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy92YWxvcmNhcGl0YWxobS9zZWN0aW9ucy9PdXJBcHByb2FjaC50c3g=@OurApproach"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/valorcapitalhm/sections/OurApproach.tsx"
+          ],
+          "default": "deco-sites/valorcapitalhm/sections/OurApproach.tsx"
+        }
+      }
+    },
     "ZGVjby1zaXRlcy92YWxvcmNhcGl0YWxobS9zZWN0aW9ucy9PdXJUZWFtLnRzeA==": {
       "title": "deco-sites/valorcapitalhm/sections/OurTeam.tsx",
       "type": "object",
@@ -12912,6 +12962,9 @@
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy92YWxvcmNhcGl0YWxobS9zZWN0aW9ucy9JbmZvQ2FyZC50c3g="
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy92YWxvcmNhcGl0YWxobS9zZWN0aW9ucy9PdXJBcHByb2FjaC50c3g="
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy92YWxvcmNhcGl0YWxobS9zZWN0aW9ucy9PdXJUZWFtLnRzeA=="
