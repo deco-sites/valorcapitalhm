@@ -1,4 +1,5 @@
 import { useEffect, useState } from "preact/compat";
+import Image from "deco-sites/std/components/Image.tsx";
 
 import type { HeaderType } from "../sections/Header.tsx";
 
@@ -23,8 +24,10 @@ export default function MenuButton(props: HeaderType) {
       >
         <div className={`flex justify-between items-center`}>
           <picture>
-            <img
-              src={logoImage}
+            <Image
+              src={logoImage || ""}
+              width={180}
+              height={30}
               alt=""
               className={`max-w-[140px] ${
                 isOpen ? `brightness-[10]` : ` xl:max-w-[100%]`

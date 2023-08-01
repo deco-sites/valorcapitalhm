@@ -1,4 +1,5 @@
 import type { Image as LiveImage } from "deco-sites/std/components/types.ts";
+import Image from "deco-sites/std/components/Image.tsx";
 
 export interface InfoCardInterface {
   /** @description Posição do texto referente a image. */
@@ -38,14 +39,18 @@ export default function InfoCard(props: InfoCardInterface) {
         <div
           className={`pb-[8px] relative right-[8px] rounded-lg bg-gradient-to-bl  from-[#48d0ff] to-[#e4ff49]`}
         >
-          <img
+          <Image
             className={`relative top-[8px] left-[8px] rounded-lg`}
-            src={image}
+            src={image || ``}
+            height={540}
+            width={1022}
           />
-          <img
+          <Image
             className={`rounded-lg bg-gradient-to-l from-[#addf6e] to-[#d0ef51] absolute h-[auto] w-[33%] bottom-0 py-[15px] px-[10px]`}
-            src={secondaryImage}
+            src={secondaryImage || ``}
             alt=""
+            width={116}
+            height={26}
           />
         </div>
       </div>
