@@ -5,24 +5,24 @@ function GlobalTags() {
     <Head>
       {/* Tailwind v3 CSS file */}
       <link href={asset("/styles.css")} rel="stylesheet" />
-
+      <title>Valor Capital Group | Driving Local Innovation</title>
       {/* Icons */}
       <link
         rel="icon"
         type="image/png"
         sizes="32x32"
-        href={asset("/favicon-32x32.png")}
+        href={`https://valorcapitalgroup.com/wp-content/themes/valor/static/favicon/apple-touch-icon.png`}
       />
       <link
         rel="icon"
         type="image/png"
         sizes="16x16"
-        href={asset("/favicon-16x16.png")}
+        href={`https://valorcapitalgroup.com/wp-content/themes/valor/static/favicon/apple-touch-icon.png`}
       />
       <link
         rel="shortcut icon"
         type="image/x-icon"
-        href={asset("/favicon-32x32.png")}
+        href={`https://valorcapitalgroup.com/wp-content/themes/valor/static/favicon/apple-touch-icon.png`}
       />
       <link rel="preconnect" href="https://fonts.googleapis.com" />
       <link rel="preconnect" href="https://fonts.gstatic.com" />
