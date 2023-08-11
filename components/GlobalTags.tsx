@@ -33,7 +33,9 @@ function GlobalTags() {
         {`
           @font-face {
             font-family: 'GT-Eesti-Display-Bold';
-            src: url(${asset("static/fonts/GT-Eesti-Display-Bold.woff2")}) format('woff2'),
+            src: url(${
+          asset("static/fonts/GT-Eesti-Display-Bold.woff2")
+        }) format('woff2'),
             font-weight: bold;
             font-style: normal;
           }
