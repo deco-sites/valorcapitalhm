@@ -26,19 +26,19 @@ function GlobalTags() {
       />
       <link rel="preconnect" href="https://fonts.googleapis.com" />
       <link rel="preconnect" href="https://fonts.gstatic.com" />
-      <link
-        href="https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@100;300;400;500;700&display=swap"
-        rel="stylesheet"
-      >
-      </link>
-
       {/* Web Manifest */}
       <link rel="manifest" href={asset("/site.webmanifest")} />
 
       <style>
         {`
+          @font-face {
+            font-family: 'GT-Eesti-Display-Bold';
+            src: url(${asset("static/fonts/GT-Eesti-Display-Bold.woff2")}) format('woff2'),
+            font-weight: bold;
+            font-style: normal;
+          }
           body {
-            font-family: 'Roboto', sans-serif;
+            font-family: 'GT-Eesti-Display-Bold';
           }
           mark {
             background: linear-gradient(225deg,#48d0ff,#e4ff49) no-repeat;
