@@ -31,7 +31,7 @@ export default function InfoCard(props: InfoCardInterface) {
 
   return (
     <section
-      className={`px-5 flex flex-col ${
+      className={`px-5 flex flex-col lg:px-[5rem] ${
         textPosition == "left" ? `xl:flex-row` : `xl:flex-row-reverse`
       } xl:max-w-[80rem] m-auto`}
     >

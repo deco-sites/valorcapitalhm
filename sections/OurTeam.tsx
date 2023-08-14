@@ -15,13 +15,15 @@ export default function OurTeam(props: OurTeam) {
       >
         <div className={`xl:flex-1`}>
           <p
-            className={`uppercase text-white text-sm font-bold mb-5 xl:text-base`}
+            className={`uppercase text-white text-sm mb-5 xl:text-base font-["bureal"] tracking-[0.18rem]`}
           >
             {subTitle}
           </p>
-          <p className={`text-4xl text-white font-extrabold mb-5 xl:text-6xl`}>
+          <h1
+            className={`font-["gteesti"] text-4xl text-white font-extrabold mb-5 xl:text-6xl`}
+          >
             {title}
-          </p>
+          </h1>
         </div>
         <div className={`xl:flex-1 xl:mt-8`}>
           <p

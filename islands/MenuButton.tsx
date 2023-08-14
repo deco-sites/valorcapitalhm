@@ -81,10 +81,10 @@ export default function MenuButton(props: HeaderType) {
               );
             })}
             <li
-              className={`bg-gradient-to-bl from-[#48d0ff] to-[#e4ff49] w-[fit-content] px-[4px] py-[21px] rounded-full`}
+              className={`bg-gradient-to-bl from-[#48d0ff] to-[#e4ff49] w-[fit-content] px-[4px] py-[16px] rounded-full`}
             >
               <a
-                className={`bg-[#263961] px-[36px] py-[20px]  text-xl text-white font-bold rounded-full xl:bg-[#f3f3f3] xl:text-[#263961] xl:hover:bg-[rgb(255,255,255,0)] xl:transition-all xl:duration-300`}
+                className={`bg-[#263961] px-[36px] py-[15px] text-[14px] text-white font-bold rounded-full xl:bg-[#f3f3f3] xl:text-[#263961] xl:hover:bg-[rgb(255,255,255,0)] xl:transition-all xl:duration-300`}
                 href=""
               >
                 Get in Touch

@@ -66,7 +66,7 @@ const Slider: React.FC<SliderProps> = ({ cards }) => {
       return null;
     }
     return (
-      <div className="flex flex-row items-center justify-center">
+      <div className="flex flex-row items-center justify-center relative bottom-[52px]">
         {cards.map((_, index) => (
           <div
             key={index}
@@ -114,7 +114,9 @@ const Slider: React.FC<SliderProps> = ({ cards }) => {
                   height={472}
                 />
                 <div className="pt-[20px] xl:pl-[50px] xl:pt-0">
-                  <p className={`font-["bureal"]`}>{item?.localName}</p>
+                  <p className={`font-["bureal"] tracking-[0.18rem]`}>
+                    {item?.localName}
+                  </p>
                   <h4 className={`mb-[18px] font-["gteesti"]`}>
                     <a
                       href={item?.titleLink}
