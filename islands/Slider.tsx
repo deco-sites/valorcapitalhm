@@ -114,7 +114,9 @@ const Slider: React.FC<SliderProps> = ({ cards }) => {
                   height={472}
                 />
                 <div className="pt-[20px] xl:pl-[50px] xl:pt-0">
-                  <p className={`font-["bureal"] tracking-[0.18rem]`}>{item?.localName}</p>
+                  <p className={`font-["bureal"] tracking-[0.18rem]`}>
+                    {item?.localName}
+                  </p>
                   <h4 className={`mb-[18px] font-["gteesti"]`}>
                     <a
                       href={item?.titleLink}

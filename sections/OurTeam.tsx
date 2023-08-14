@@ -19,8 +19,10 @@ export default function OurTeam(props: OurTeam) {
           >
             {subTitle}
           </p>
-          <h1 className={`font-["gteesti"] text-4xl text-white font-extrabold mb-5 xl:text-6xl`}>
-            {title} 
+          <h1
+            className={`font-["gteesti"] text-4xl text-white font-extrabold mb-5 xl:text-6xl`}
+          >
+            {title}
           </h1>
         </div>
         <div className={`xl:flex-1 xl:mt-8`}>
