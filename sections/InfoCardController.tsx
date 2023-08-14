@@ -11,9 +11,9 @@ export default function InfoCardController(props: InfoCardController) {
   const { title, subTitle, infoCards } = props;
   return (
     <section className={`my-7 xl:my-20`}>
-      <div className={`px-5 xl:max-w-[80rem] xl:mx-auto xl:mb-16`}>
+      <div className={`px-5 xl:max-w-[80rem] xl:mx-auto xl:mb-16 lg:px-[5rem] xl:flex xl:flex-col xl:items-center`}>
         <div
-          className={`font-["gteesti"] text-center text-4xl font-normal mb-5 xl:text-6xl xl:leading-[3.75rem] xl:text-black`}
+          className={`font-["gteesti"] text-center text-4xl font-normal mb-5 xl:text-[50px] xl:leading-[3.75rem] text-[#1d1f22] xl:max-w-[970px]`}
           dangerouslySetInnerHTML={{ __html: title || "" }}
         >
         </div>
@@ -23,7 +23,7 @@ export default function InfoCardController(props: InfoCardController) {
           {subTitle}
         </p>
       </div>
-      <div class={`xl:flex xl:flex-col xl:gap-[5.62rem]`}>
+      <div class={`xl:flex xl:flex-col xl:gap-[5.62rem] lg:px-[5rem]`}>
         {infoCards?.map((infoCard) => {
           return (
             <InfoCard
