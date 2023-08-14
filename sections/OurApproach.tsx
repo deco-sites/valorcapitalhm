@@ -13,7 +13,7 @@ export default function OurApproach(props: OurApproach) {
     >
       <p className={`text-base text-white text-center mb-3`}>{subTitle}</p>
       <p
-        className={`text-4xl font-bold text-white text-center mb-8 xl:text-6xl xl:max-w-[66rem]`}
+        className={`text-4xl font-bold text-white text-center mb-8 xl:text-6xl xl:max-w-[66rem] font-["gteesti"]`}
       >
         {title}
       </p>
