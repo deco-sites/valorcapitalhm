@@ -57,16 +57,16 @@ export default function InfoCard(props: InfoCardInterface) {
       <div className={`xl:flex-1 xl:p-5`}>
         <article className={`xl:h-full xl:flex xl:flex-col xl:justify-between`}>
           <p
-            className={`text-[#1d1f22] text-sm leading-5 font-[FreightText]  my-1 xl:text-base`}
+            className={`font-["bureau"] text-[#1d1f22] text-sm leading-5 my-1 xl:text-base`}
           >
             {subTitle}
           </p>
           <div
-            className={`text-3xl leading-[2rem] font-bold tracking-tighter my-1 xl:text-5xl xl:leading-[1.3]`}
+            className={`font-["gteesti"] text-3xl leading-[2rem] font-bold tracking-tighter my-1 xl:text-5xl xl:leading-[1.3]`}
             dangerouslySetInnerHTML={{ __html: title || "" }}
           >
           </div>
-          <p className={`text-lg leading-[1.5rem] my-3`}>{description}</p>
+          <p className={`text-lg leading-[1.5rem] my-3 font-["freight"] lg:font-[1.375rem]`}>{description}</p>
           <a
             className={`font-bold underline text-[#1b5569] text-sm my-1 xl:text-xl`}
             href={readMoreLink}
