@@ -66,7 +66,11 @@ export default function InfoCard(props: InfoCardInterface) {
             dangerouslySetInnerHTML={{ __html: title || "" }}
           >
           </div>
-          <p className={`text-lg leading-[1.5rem] my-3 font-["freight"] lg:font-[1.375rem]`}>{description}</p>
+          <p
+            className={`text-lg leading-[1.5rem] my-3 font-["freight"] lg:font-[1.375rem]`}
+          >
+            {description}
+          </p>
           <a
             className={`font-bold underline text-[#1b5569] text-sm my-1 xl:text-xl`}
             href={readMoreLink}

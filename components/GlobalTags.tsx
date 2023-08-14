@@ -50,7 +50,9 @@ function GlobalTags() {
       {/* Web Manifest */}
       <link rel="manifest" href={asset("/site.webmanifest")} />
 
-      <style dangerouslySetInnerHTML={{__html: `
+      <style
+        dangerouslySetInnerHTML={{
+          __html: `
           @font-face {
             font-family: "gteesti";
             src:url(${asset("/GT-Eesti-Display-Bold.woff2")}) format("woff2");
@@ -61,14 +63,18 @@ function GlobalTags() {
 
           @font-face {
             font-family: "freight";
-            src:url(${asset("/FreightTextProBook-Regular.woff2")}) format("woff2");
+            src:url(${
+            asset("/FreightTextProBook-Regular.woff2")
+          }) format("woff2");
             font-weight: normal;
             font-style: normal; 
             font-display: swap;
           }
           @font-face {
             font-family: "bureal";
-            src:url(${asset("/BureauGrotCondensed-Book.woff2")}) format("woff2");
+            src:url(${
+            asset("/BureauGrotCondensed-Book.woff2")
+          }) format("woff2");
             font-weight: normal;
             font-style: normal; 
             font-display: swap;
@@ -94,8 +100,9 @@ function GlobalTags() {
               opacity: 0;
               transition: opacity 0.5s ease-in-out;
             }
-      `}}>
-
+      `,
+        }}
+      >
       </style>
     </Head>
   );
