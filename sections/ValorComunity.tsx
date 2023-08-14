@@ -24,9 +24,11 @@ export default function ValorComunity({
 }: Props) {
   return (
     <section className={"bg-[#F3F3F3]"}>
-      <div className="flex flex-col justify-center max-w-[90%] lg:max-w-[80rem] mx-auto lg:px-[5rem] pb-[100px]">
+      <div className="flex flex-col justify-center max-w-[90%] lg:max-w-[80rem] mx-auto lg:py-[5rem] pb-[100px]">
         <div className="flex flex-row items-end	 gap-5 mb-[48px] mt-[77px]">
-          <h1 className="text-[50px] font-bold text-black">{sectionTitle}</h1>
+          <h1 className={`text-[50px] font-bold text-black font-["gteesti"]`}>
+            {sectionTitle}
+          </h1>
           <a
             href={sectionExplorerLink}
             className="mb-[9px] font-bold text-[20px] underline text-[#1b5569]"

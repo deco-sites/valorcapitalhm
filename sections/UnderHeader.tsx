@@ -10,19 +10,19 @@ export default function UnderHeader(
   }: props,
 ) {
   return (
-    <section className={"bg-[#F3F3F3]"}>
+    <section className={"bg-[#F3F3F3] pt-[90px]"}>
       <div
-        className={"flex flex-col justify-center max-w-[90%] lg:max-w-[80rem] mx-auto lg:px-[5rem] pb-[100px]"}
+        className={"flex flex-col justify-center max-w-[90%] lg:max-w-[80rem] mx-auto pb-[100px]"}
       >
         <div
           dangerouslySetInnerHTML={{ __html: title }}
-          className={"font-[700] lg:text-[72px] text-[48px] mb-[30px] text-black lg:max-w-[800px]"}
+          className={`font-["gteesti"] font-[700] lg:text-[4.875rem] text-[48px] mb-[30px] text-black lg:max-w-[900px] lg:leading-[90px]`}
         >
         </div>
         <div>
           <p
             dangerouslySetInnerHTML={{ __html: text }}
-            className={"text-lg text-left lg:text-[1.75rem] lg:max-w-[700px] lg:leading-normal"}
+            className={`font-["freight"] text-lg text-left lg:text-[1.75rem] lg:max-w-[700px] lg:leading-normal`}
           >
           </p>
         </div>

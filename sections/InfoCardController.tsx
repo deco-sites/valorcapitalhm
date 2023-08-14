@@ -11,14 +11,14 @@ export default function InfoCardController(props: InfoCardController) {
   const { title, subTitle, infoCards } = props;
   return (
     <section className={`my-7 xl:my-20`}>
-      <div className={`px-5 xl:max-w-[66rem] xl:mx-auto xl:mb-16`}>
+      <div className={`px-5 xl:max-w-[80rem] xl:mx-auto xl:mb-16`}>
         <div
-          className={`text-center text-4xl font-bold mb-5 xl:text-6xl xl:leading-[3.75rem] xl:text-black`}
+          className={`font-["gteesti"] text-center text-4xl font-normal mb-5 xl:text-6xl xl:leading-[3.75rem] xl:text-black`}
           dangerouslySetInnerHTML={{ __html: title || "" }}
         >
         </div>
         <p
-          className={`text-center mb-5 xl:max-w-[43rem] xl:mx-auto xl:text-xl`}
+          className={`font-["freight"] text-center mb-5 xl:max-w-[43rem] xl:mx-auto xl:text-[1.375rem]`}
         >
           {subTitle}
         </p>
